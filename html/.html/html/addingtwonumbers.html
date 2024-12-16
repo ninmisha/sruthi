@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        
+        function sum() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var result = a + b; 
+            alert("The sum is: " + result); 
+        }
+
+       
+        function difference() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var result = a - b; 
+            alert("The difference is: " + result); 
+        }
+        
+
+        function multipication() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var result = a * b; 
+            alert("The difference is: " + result); 
+        }
+
+        function division() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var result = a / b; 
+            alert("The difference is: " + result); 
+        }
+    </script>
+</head>
+<body>
+  <form method ="post" action ="sum.php">
+    <h1>Calculator</h1>
+    
+ 
+    <label for="tb1">Enter first value (a):</label>
+    <input type="text" id="tb1"><br>
+
+    <label for="tb2">Enter second value (b):</label>
+    <input type="text" id="tb2"><br>
+
+   <p>
+    <button onclick="sum()">Sum</button>
+    <button onclick="difference()">Difference</button>
+    <button onclick="multipication()">Multiplication</button>
+    <button onclick="division()">division</button>
+    </p>
+  </form>
+</body>
+</html>
